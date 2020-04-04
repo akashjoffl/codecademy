@@ -1,3 +1,3 @@
-const numImaginaryFriends = (totalFriends) => {
-    return Math.round(totalFriends * .33);
-}
+const sillySentence = (one, two, three) => {
+    return (`I am so ${one} because I ${two} coding! Time to write some more awesome ${three}`);
+}   
