@@ -1,3 +1,3 @@
-const truthyOrFalsy = (value) => {
-    return value ? true : false;
+const numImaginaryFriends = (totalFriends) => {
+    return Math.round(totalFriends * .33);
 }
