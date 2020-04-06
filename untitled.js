@@ -1,20 +1,74 @@
-/* 
-Our solution is written as a function expression and uses string interpolation, but it would be equally acceptable to use a function declaration and/or string concatenation
-*/
+// Write your function here:
 
-const howOld = (age, year) => {
-    // The following two lines make it so that our function always knows the current year.
-    let dateToday = new Date();
-    let thisYear = dateToday.getFullYear();
-    // It is totally ok if your function used the current year directly!
+const tipCalculator = (quality, total) => {
+  let tip;
+  switch (quality) {
+    case 'bad':
+      tip = Math.round(total*0.05);
+      return tip;
+      break;
+    case 'ok':
+      tip = Math.round(total*0.15);
+      return tip;
+      break;
+    case 'good':
+      tip = Math.round(total*0.20);
+      return tip;
+      break;
+    case 'excellent':
+      tip = Math.round(total*0.30);
+      return tip;
+      break;
+    default:
+      tip = Math.round(total*0.18);
+      return tip;
+      break;
+  }
+}
 
-    const yearDifference = year - thisYear
-    const newAge = age + yearDifference
-    if (newAge < 0) {
-        return `The year ${year} was ${-newAge} years before you were born`
-    } else if (newAge > age) {
-        return `You will be ${newAge} in the year ${year}`
-    } else {
-        return `You were ${newAge} in the year ${year}`
+
+
+
+// Uncomment the line below when you're ready to try out your function
+console.log(tipCalculator('bad', 1000)) //should return 20
+
+// We encourage you to add more function calls of your own to test your code!
+
+
+// *********** Codecademy Version ///
+
+
+const tipCalculator = (quality, total) => {
+    switch (quality) {
+        case 'bad':
+            return total * .05;
+        case 'ok':
+            return total * .15;
+        case 'good':
+            return total * .20;
+        case 'excellent':
+            return total * .30;
+        default:
+            return total * .18;
+
     }
 }
+/*
+// As a function declaration:
+function tipCalculator(quality, total) {
+    switch (quality) {
+        case 'bad':
+            return total * .05;
+        case 'ok':
+            return total * .15;
+        case 'good':
+            return total * .20;
+        case 'excellent':
+            return total * .30;
+        default:
+            return total * .18;
+
+    }
+}
+*/
+console.log(tipCalculator('good', 100))
