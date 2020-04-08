@@ -1,125 +1,101 @@
-html,
+/* Universal Styles */
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Baskerville', sans-serif;
+    margin: 0px;
+    background-color: WhiteSmoke;
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
 }
 
-img {
-    margin: 10px auto;
-    height: auto;
-    width: auto;
+.secondary-background {
+    background-color: Snow;
 }
 
-ul {
-    text-align: right;
+.tagline {
+    font-family: 'Quicksand', sans-serif;
+    color: LightSlateGrey;
+    line-height: 125px;
 }
+
+/* Header */
 
 h1 {
-    font-size: 20px;
+    margin: 0;
+    background-color: SkyBlue;
+    line-height: 100px;
+    color: Khaki;
 }
 
-/*Sizing*/
+h2 {
+    margin: 10px;
+}
+
+/* App Container */
 
 .container {
-    margin: 0 auto;
-}
-
-.spacer {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.main {
-    background-color: #ffc200;
-}
-
-/*Header Section*/
-
-.header {
-    padding: 30px 0px 40px;
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.header li {
-    list-style: none;
-    display: inline-block;
-}
-
-.header li a {
-    color: #333;
-    margin: 0;
-    border: 0px;
-}
-
-/*Jumbotron Section*/
-
-.jumbotron {
-    background-color: #fff;
-    max-width: 1200px;
-    margin-left: 50px;
-}
-
-.jumbotron h2 {
-    font-size: 50px;
-    margin-bottom: 70px;
-}
-
-.jumbotron h2 span {
-    color: #ffc200;
-}
-
-.jumbotron p {
-    text-shadow: 0 0;
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 0;
-}
-
-/*Banner Section*/
-.banner {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-/*Expertise Section*/
-.cards {
-    background-color: #ffc200;
+    border: 2px solid Snow;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.col {
+/* To Do Section */
+
+.week {
     display: inline-flex;
+    flex-grow: 3;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-#expertise {
-    padding: 20px;
-    background-color: #ffc200;
-    margin: 0;
-    text-align: center;
+.row {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
-/*Footer Section*/
-.footer {
-    padding: 60px 0px;
-    background-color: #000;
-    color: #fff;
+.square {
+    width: 125px;
+    height: 125px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.footer h3 {
-    font-size: 20px;
-    margin-left: 20px;
+.day.square {
+    background-color: SkyBlue;
+    border: 1px solid white;
 }
 
-.footer p {
+.task.square {
+    background-color: Khaki;
+    border: 1px solid white;
+}
+
+.task p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
     font-size: 12px;
-    margin-bottom: 0;
-    margin-left: 20px;
+}
+
+/* Reminders */
+
+.reminders {
+    background-color: Khaki;
+    display: inline-flex;
+    flex-grow: 2;
+}
+
+.reminders h3 {
+    width: 100%;
+    margin: 10px;
+    color: black;
+    line-height: 90px;
+    font-size: 24px;
+}
+
+/* Footer */
+
+footer {
+    font-size: 24px;
 }
