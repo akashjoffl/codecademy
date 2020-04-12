@@ -1,16 +1,10 @@
-const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 
-// Call .filter() on randomNumbers below
-const smallNumbers = randomNumbers.filter(num => {
-    return num < 250;
-})
+const foundAnimal = animals.findIndex(animal => {
+    return animal === 'elephant';
+});
 
-const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
-
-
-// Call .filter() on favoriteWords below
-
-const longFavoriteWords = favoriteWords.filter(word => {
-    return word.length > 7;
-})
+const startsWithS = animals.findIndex(animal => {
+    return animal[0] === 's' ? true : false;
+});
 
