@@ -1,16 +1,14 @@
 let spaceship = {
+    'Fuel Type': 'Turbo Fuel',
     homePlanet: 'Earth',
     color: 'silver',
-    'Fuel Type': 'Turbo Fuel',
-    numCrew: 5,
-    flightPath: ['Venus', 'Mars', 'Saturn']
+    'Secret Mission': 'Discover life outside of Earth.'
 };
 
 // Write your code below
-let crewCount = spaceship.numCrew;
 
-console.log(crewCount);
+spaceship.color = 'glorious gold';
 
-let planetArray = spaceship.flightPath;
+spaceship.numEngines = 9;
 
-console.log(planetArray); 
+delete spaceship['Secret Mission'];
